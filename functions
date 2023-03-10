@@ -1,0 +1,6 @@
+from PIL import Image
+
+def convert_to_png(path_to_image, final_name):
+    image = Image.open(path_to_image)
+    image.save(f'{final_name}.png')
+    image.close()
